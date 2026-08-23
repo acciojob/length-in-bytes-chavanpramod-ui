@@ -1,5 +1,6 @@
 const byteSize = (str) => {
-  // write your code here
+  // Create a Blob from the string to get its size in bytes, supporting both ASCII and non-ASCII
+  return new Blob([str]).size;
 };
 
 // Do not change the code below
